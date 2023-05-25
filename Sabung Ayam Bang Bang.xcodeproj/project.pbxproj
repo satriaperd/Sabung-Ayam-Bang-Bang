@@ -15,6 +15,17 @@
 		C42406472A1CEF5300997499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42406452A1CEF5300997499 /* Main.storyboard */; };
 		C42406492A1CEF5400997499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C42406482A1CEF5400997499 /* Assets.xcassets */; };
 		C424064C2A1CEF5400997499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C424064A2A1CEF5400997499 /* LaunchScreen.storyboard */; };
+		C42406562A1CF06E00997499 /* EntitesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406552A1CF06E00997499 /* EntitesManager.swift */; };
+		C42406582A1CF07E00997499 /* SpriteComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406572A1CF07E00997499 /* SpriteComponents.swift */; };
+		C424065B2A1CF58200997499 /* RoosterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C424065A2A1CF58200997499 /* RoosterEntity.swift */; };
+		C424065D2A1CF6CA00997499 /* RoosterComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C424065C2A1CF6CA00997499 /* RoosterComponent.swift */; };
+		C424065F2A1D0FE600997499 /* JoystickComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C424065E2A1D0FE600997499 /* JoystickComponent.swift */; };
+		C42406612A1D469400997499 /* StateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406602A1D469400997499 /* StateMachine.swift */; };
+		C42406652A1DC05F00997499 /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406642A1DC05F00997499 /* MovementComponent.swift */; };
+		C42406672A1E0BC900997499 /* HealthBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406662A1E0BC900997499 /* HealthBarComponent.swift */; };
+		C42406692A1E5F5500997499 /* AttackComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42406682A1E5F5500997499 /* AttackComponent.swift */; };
+		C424066B2A1E60BF00997499 /* HitboxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C424066A2A1E60BF00997499 /* HitboxComponent.swift */; };
+		C424066D2A1E623200997499 /* HurtboxComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C424066C2A1E623200997499 /* HurtboxComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +38,17 @@
 		C42406462A1CEF5300997499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C42406482A1CEF5400997499 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C424064B2A1CEF5400997499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C42406552A1CF06E00997499 /* EntitesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitesManager.swift; sourceTree = "<group>"; };
+		C42406572A1CF07E00997499 /* SpriteComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteComponents.swift; sourceTree = "<group>"; };
+		C424065A2A1CF58200997499 /* RoosterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoosterEntity.swift; sourceTree = "<group>"; };
+		C424065C2A1CF6CA00997499 /* RoosterComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoosterComponent.swift; sourceTree = "<group>"; };
+		C424065E2A1D0FE600997499 /* JoystickComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoystickComponent.swift; sourceTree = "<group>"; };
+		C42406602A1D469400997499 /* StateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMachine.swift; sourceTree = "<group>"; };
+		C42406642A1DC05F00997499 /* MovementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementComponent.swift; sourceTree = "<group>"; };
+		C42406662A1E0BC900997499 /* HealthBarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthBarComponent.swift; sourceTree = "<group>"; };
+		C42406682A1E5F5500997499 /* AttackComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackComponent.swift; sourceTree = "<group>"; };
+		C424066A2A1E60BF00997499 /* HitboxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitboxComponent.swift; sourceTree = "<group>"; };
+		C424066C2A1E623200997499 /* HurtboxComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HurtboxComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,16 +81,59 @@
 		C424063A2A1CEF5300997499 /* Sabung Ayam Bang Bang */ = {
 			isa = PBXGroup;
 			children = (
+				C42406592A1CF25500997499 /* Utilities */,
+				C42406542A1CEFC500997499 /* Scenes */,
+				C42406532A1CEF8200997499 /* Components */,
+				C42406522A1CEF7700997499 /* Entities */,
 				C424063B2A1CEF5300997499 /* AppDelegate.swift */,
-				C424063D2A1CEF5300997499 /* GameScene.sks */,
-				C424063F2A1CEF5300997499 /* Actions.sks */,
-				C42406412A1CEF5300997499 /* GameScene.swift */,
 				C42406432A1CEF5300997499 /* GameViewController.swift */,
 				C42406452A1CEF5300997499 /* Main.storyboard */,
 				C42406482A1CEF5400997499 /* Assets.xcassets */,
 				C424064A2A1CEF5400997499 /* LaunchScreen.storyboard */,
 			);
 			path = "Sabung Ayam Bang Bang";
+			sourceTree = "<group>";
+		};
+		C42406522A1CEF7700997499 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C42406552A1CF06E00997499 /* EntitesManager.swift */,
+				C424065A2A1CF58200997499 /* RoosterEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C42406532A1CEF8200997499 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C42406572A1CF07E00997499 /* SpriteComponents.swift */,
+				C424065C2A1CF6CA00997499 /* RoosterComponent.swift */,
+				C424065E2A1D0FE600997499 /* JoystickComponent.swift */,
+				C42406642A1DC05F00997499 /* MovementComponent.swift */,
+				C42406662A1E0BC900997499 /* HealthBarComponent.swift */,
+				C42406682A1E5F5500997499 /* AttackComponent.swift */,
+				C424066A2A1E60BF00997499 /* HitboxComponent.swift */,
+				C424066C2A1E623200997499 /* HurtboxComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C42406542A1CEFC500997499 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C424063D2A1CEF5300997499 /* GameScene.sks */,
+				C424063F2A1CEF5300997499 /* Actions.sks */,
+				C42406412A1CEF5300997499 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C42406592A1CF25500997499 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C42406602A1D469400997499 /* StateMachine.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +209,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42406652A1DC05F00997499 /* MovementComponent.swift in Sources */,
 				C42406422A1CEF5300997499 /* GameScene.swift in Sources */,
 				C42406442A1CEF5300997499 /* GameViewController.swift in Sources */,
+				C42406692A1E5F5500997499 /* AttackComponent.swift in Sources */,
+				C424065D2A1CF6CA00997499 /* RoosterComponent.swift in Sources */,
+				C42406562A1CF06E00997499 /* EntitesManager.swift in Sources */,
+				C42406612A1D469400997499 /* StateMachine.swift in Sources */,
+				C424065B2A1CF58200997499 /* RoosterEntity.swift in Sources */,
+				C424065F2A1D0FE600997499 /* JoystickComponent.swift in Sources */,
+				C424066B2A1E60BF00997499 /* HitboxComponent.swift in Sources */,
+				C42406582A1CF07E00997499 /* SpriteComponents.swift in Sources */,
+				C42406672A1E0BC900997499 /* HealthBarComponent.swift in Sources */,
+				C424066D2A1E623200997499 /* HurtboxComponent.swift in Sources */,
 				C424063C2A1CEF5300997499 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,12 +371,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U58Z5DC5TF;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.action-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,12 +400,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U58Z5DC5TF;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.action-games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
